@@ -1,477 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Sirena</title>
+    <title>Astra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fjalla+One&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fjalla+One&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    
+    <style>
+      .pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+      .pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+       @keyframes glowText {
+    0%{
+        text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #a855f7,
+        0 0 20px #9333ea;
+    }
 
-    <title>Document</title>
+    100%{
+        text-shadow:
+        0 0 15px #ffffff,
+        0 0 30px #c084fc,
+        0 0 50px #7e22ce,
+        0 0 70px #7e22ce;
+    }
+}
+
+.glowText {
+    animation: glowText 3s ease-in-out infinite alternate;
+}
+
+ @keyframes glowt {
+  0%{
+      text-shadow:
+        0 0 1px #ffffffc4;
+    }
+    50%{
+        text-shadow:
+        0 0 1px #ffffffc4,
+        0 0 3px #c084fcd8,
+        0 0 6px #7e22ce9a;
+    }
+
+    100%{
+        text-shadow:
+        0 0 5px #ffffffc4,
+        0 0 10px #c084fcd8,
+        0 0 15px #7e22ce9a;
+      
+    }
+}
+
+.glowt {
+    animation: glowt 3s ease-in-out infinite alternate;
+}
+
+
+@keyframes glow {
+ 0%{
+        box-shadow:
+        0 0 2px #ffffff,
+        0 0 4px #a855f7;
+        
+    }
+
+    100%{
+        box-shadow:
+        0 0 3px #ffffff,
+        0 0 6px #c084fc,
+        0 0 12px #7e22ce;
+
+    }
+}
+
+.glow {
+    animation: glow 5s ease-in-out infinite alternate;
+}
+
+@keyframes floating {
+  0%,100%{
+    transform: translateY(0);
+  }
+
+  50%{
+    transform: translateY(-10px);
+  }
+}
+
+.service-icon{
+    animation: floating 5s ease-in-out infinite;
+    
+}
+
+    </style>
 </head>
-<body>
-    <div class="home">
-    <header>
-        <section class="header1">
-            <div class="header1-container">
-            <nav class="header1-nav1">
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Careers</a></li>
-                </ul>
-            </nav> <!-- header1-nav1 -->
-            <nav class="header1-nav2">
-                <ul>
-                    <li><a href="#" class="Wishlist">Wishlist <i class="far fa-heart heart"></i></a></li>
-                    <li><a href="#">Track Your Order</a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                </ul> 
-            </nav> <!-- header1-nav2 -->
-            </div> <!-- header1-container -->
-        </section> <!-- header1 -->
-        <div class="line"></div>
-        <section class="header2">
-    <div class="header2-container">
-        <div class="title-logo">
-            <div class="logo">
-                <img src="images/logo2.png" alt="Logo">
-            </div>
-        </div>
-        <nav class="header2-nav">
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Destinations</a>
-                </li>
-                <li>
-                    <a href="#">Experiences</a>
-                </li>
-                <li class="travel-item">
-                    <a href="#">
-                        Travel Style
-                        <i class="fa-solid fa-angle-down arrow-down"></i>
-                    </a>
-                    <!-- new -->
-                    <div class="travel-style">
-                          <div class="travel-box">
-        <i class="fa-solid fa-umbrella-beach travel-box-icon"></i>
-        <span>Beach Escapes</span>
-    </div>
-    <div class="travel-box">
-        <i class="fa-solid fa-mountain travel-box-icon"></i>
-        <span>Mountain Trips</span>
-    </div>
-    <div class="travel-box">
-        <i class="fa-solid fa-city travel-box-icon"></i>
-        <span>City Tours</span>
-    </div>
-    <div class="travel-box">
-        <i class="fa-solid fa-plane travel-box-icon"></i>
-        <span>Luxury Travel</span>
-    </div>
-    </div>
-                </li>
-                <li>
-                    <a href="#">Deals</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- /header2-nav -->
-        <div class="header2-icons">
-            <a href="#">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
-            <a href="#">
-                <i class="fa-solid fa-user"></i>
-            </a>
-            <a href="#" class="icon-cart">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <div class="div-circle">2</div>
-            </a>
-        </div>
-        <!-- /header2-icons -->
-    </div>
-    <!-- /header2-container -->
-</section> 
-<!-- /header2 -->
+<body class="bg-[#040018] pt-sans-regular m-0 p-0 overflow-x-hidden">
+    <div class="m-0 p-0 min-h-screen  relative ">
+    <img src="images/bg.png" class="absolute top-0 bottom-0 right-0 left-0 w-full h-full opacity-50 z-[-1]">
+      
+      <div class="h-6"></div>
+      <header class="fixed top-[1.5px] left-0 right-0 z-[9999] shadow-[0_0_5px_rgba(168,85,247,0.5)] hover:shadow-[0_0_5px_rgba(255,255,255,0.7),0_0_10px_rgba(168,85,247,0.6),0_0_15px_rgba(147,51,234,0.5)] transition-all duration-1000  flex items-center justify-between rounded-xl mx-[14.5px] border border-purple-500/30 bg-black/10 px-8 py-6 backdrop-blur-lg">
+          <section class="text-4xl font-bold text-white">
+          <div class=" glowText inline-block ml-4">Astra</div>
+          <div class="text-xs rounded-full inline-block text-white px-2 py-1 translate-y-[-4px] translate-x-[4px] bg-white/10 shadow-[0_0_5px_rgba(168,85,247,0.7)]">Deep Space</div>
+        </section>
+        <section>
+          <ol class="space-x-16 hidden lg:flex text-lg font-semibold pt-1 transition-all duration-[1s]  text-purple-300">
+            <li><a href="#" class="[text-shadow:0_0_1px_rgba(168,85,247,0.9)] inline-block duration-[800ms] hover:text-white hover:[text-shadow:0_0_1px_rgba(255,255,255,1)] hover:scale-110">Home</a></li>
+            <li><a href="#" class="[text-shadow:0_0_1px_rgba(168,85,247,0.9)] inline-block duration-[800ms] hover:text-white hover:[text-shadow:0_0_1px_rgba(255,255,255,1)] hover:scale-110">About</a></li>
+            <li><a href="#" class="[text-shadow:0_0_1px_rgba(168,85,247,0.9)] inline-block duration-[800ms] hover:text-white hover:[text-shadow:0_0_1px_rgba(255,255,255,1)] hover:scale-110">Services</a></li>
+            <li><a href="#" class="[text-shadow:0_0_1px_rgba(168,85,247,0.9)] inline-block duration-[800ms] hover:text-white hover:[text-shadow:0_0_1px_rgba(255,255,255,1)] hover:scale-110">Portfolio</a></li>
+            <li><a href="#" class="[text-shadow:0_0_1px_rgba(168,85,247,0.9)] inline-block duration-[800ms] hover:text-white hover:[text-shadow:0_0_1px_rgba(255,255,255,1)] hover:scale-110">Contact</a></li>
+          </ol>
+
+        </section> 
+        <section class="headerBtn">
+          <button class="bg-gradient-to-br from-fuchsia-500 via-purple-500 to-violet-600   text-white rounded-lg px-6 py-2  transition-all duration-[1s] shadow-[0_0_25px_rgba(168,85,247,0.2)] hover:scale-105 relative hover:shadow-[0_0_25px_rgba(168,85,247,0.6)] hover:[text-shadow:0_0_10px_rgba(168,85,247,1),0_0_20px_rgba(168,85,247,1)] relative "><div class="absolute bottom-0 top-0 left-0 right-0 rounded-xl blur-xl bg-white/10 opacity-100"></div>Get a Cosultation</button>
+        </section> 
     </header>
-    <main>
-        <div class="main-overlay"></div> <!-- main-overlay -->
-        <section class="header3">
-            <p>Sale Up To 50% Biggest Discounts. Hurry! Limited Perriod Offer   <a href="#">Book Now</a> </p>
-        </section> <!-- header3 -->
-        <div class="main-container">
-            <div class="main-parent">
-                <div class="main-left-section">
-                    <h2>Explore the World.</h2>
-                    <h2 style="color: #3FB7B0;">Collect Happiness.</h2>
-                    <p>Handpicked adventures, dreamy destinations, and unforgettable memories - just for you.</p>
-                    <button class="main-left-btn">Explore Now</button>
-                </div><!--main-left-section -->
-            </div> <!-- main-parent -->
-        </div> <!-- main-container -->
-    </main>
-</div> <!-- home -->
-    <section class="section2">
-                <div class="section2-card">
-                    <div class="section2-card-img">
-                    <img src="images/im1.png" alt="">
-                    </div> <!-- section2-card-img -->
-                    <div class="text-type">
-                    <p>Sunset Paradise</p>
-                    <span class="type-span">book now</span>
-                        </div> <!-- text-type -->
-                </div> <!-- section2-card -->
-                <div class="section2-card">
-                   <div class="section2-card-img">
-                    <img src="images/im2.png" alt="">
-                     </div> <!-- section2-card-img -->
-                     <div class="text-type">
-                    <p>Crystal Lagoon</p>
-                    <span class="type-span">book now</span>
-                     </div> <!-- text-type -->
-                </div> <!-- section2-card -->
-                <div class="section2-card">
-                    <div class="section2-card-img">
-                    <img src="images/im3.png" alt="">
-                     </div> <!-- section2-card-img -->
-                     <div class="text-type">
-                     <p>Sky Adventure</p>
-                    <span class="type-span">book now</span>
+    <main class="pt-20 px-8 flex justify-evenly flex-col lg:flex-row min-h-screen ">
+      <div class="left-section space-y-8 w-full lg:w-1/2 p-8 mt-[70px]">
+        <h2 class="leading-tight text-4xl md:text-6xl  lg:text-7xl font-bold text-white [text-shadow:0_0_1px_rgba(168,85,247,0.7)]">Journey Through The Infinite <span class="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">Universe</span></h2>
+        <p class="leading-8 text-lg text-gray-300 mt-6">Embark on a breathtaking journey across galaxies, stars, and distant worlds waiting to be discovered.</p>
+        <div class="text-gray-300 flex gap-4 mt-8">
+          <div class="flex items-center gap-2">
+            <div class="size-6 pt-[1px] bg-white rounded-full text-center shadow-[0_0_5px_rgba(168,85,247,0.7)] "></div><p class="">8,000+ Planets</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="size-6 pt-[1px] bg-white rounded-full text-center shadow-[0_0_5px_rgba(168,85,247,0.7)]"></div><p class="">1.2M+ Stars</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="size-6 pt-[1px] bg-white rounded-full text-center shadow-[0_0_5px_rgba(168,85,247,0.7)]"></div><p class="">3,000+ Galaxies</p>
+        </div>
+        </div>
+        <div class="flex gap-5 mt-8">
+        <button class="bg-gradient-to-br from-fuchsia-500 via-purple-500 to-violet-600  shadow-[0_0_25px_rgba(168,85,247,0.2)] text-white rounded-lg px-8 py-4 text-lg font-semibold transition-all duration-[1s]  hover:scale-105  relative hover:shadow-[0_0_25px_rgba(168,85,247,0.6)] hover:[text-shadow:0_0_10px_rgba(168,85,247,1),0_0_20px_rgba(168,85,247,1)]"><div class="absolute bottom-0 top-0 left-0 right-0 rounded-xl blur-xl bg-white/10 opacity-70"></div>Start Your Journey</button>
+        <button class="bg-white/1  text-white border border-[#A855F7] shadow-[0_0_25px_rgba(168,85,247,0.2)] rounded-lg px-8 py-4 text-lg font-semibold transition-all duration-[1s] hover:scale-105 hover:shadow-[0_0_25px_rgba(168,85,247,1)] hover:[text-shadow:0_0_10px_rgba(168,85,247,1),0_0_20px_rgba(168,85,247,1)]"><i class="fas fa-play"></i> Watch the Video</button>
+        </div>
+      </div>
+      <div class="hidden lg:block right-section w-full lg:w-1/2 p-8 mt-[20px]">
+        <div class="relative">
+          <div class= "relative glow border border-purple-500/30 absolute w-[650px] h-[450px] rounded-3xl bg-image bg-[url('images/im2.png')] bg-cover mt-[17px] ml-[20px] ">
+            <div class="absolute w-[100%] h-[620px] bg-[#040018] blur-md  opacity-40  shadow-[0_0_20px_#040018,0_0_30px_#040018] -mt-5 z-100"></div>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+    </main> 
+    </section>
+    <div class="relative flex items-center justify-center -mt-[20px]">
+
+    <div class="absolute w-[100%] h-[120px] bg-[#040018] blur-md   shadow-[0_0_20px_#040018,0_0_30px_#040018]"></div>
+
+</div>
+    <section class="section2 relative min-h-screen py-24 -mt-6 bg-[#040018]">
+      <img src="images/bg2.png" class="absolute top-0 bottom-0 right-0 left-0 w-full h-full opacity-20">
+      <div class="container mx-auto px-4 w-[90%]">
+         <div class="title z-10 relative text-center">
+            <h2 class="text-5xl font-bold text-white mt-4 [text-shadow:0_0_3px_rgba(168,85,247,0.7)]">Our Integrated
+            <span class="bg-gradient-to-r from-purple-300 via-purple-500 to-blue-500 bg-clip-text text-transparent ">Services</span>
+          </h2>
+        </div>
+        <div class="mx-auto mt-8 w-32 h-[2px] bg-gradient-to-r from-transparent via-purple-400 to-transparent shadow-[0_0_20px_#a855f7]"></div>
+      <div class="grid lg:grid-cols-3 gap-20 mt-14 md:grid-cols-2  grid-cols-1 mx-auto sm:w-[70%] xs:w-[80%] md:w-[100%]  lg:w-[95%] xl:w-[100%]">
+        <div class=" lg:h-[460px] xl:h-[460px] service-icon shadow-[0_0_5px_rgba(168,85,247,0.5)] md:h-[500px] sm:h-[500px] cursor-pointer group relative rounded-[45px] group border border-purple-500/40 bg-[#ffffff03]  backdrop-blur-xl p-10 transition-all duration-[1s]  hover:-translate-y-2 hover:shadow-[0_0_3px_#ffffff,0_0_6px_#a855f7,0_0_12px_#9333ea] overflow-hidden hover:opacity-100 hover:[animation-play-state:paused]">
+          <div class="w-[140px] h-[140px] rounded-full border-2  border-purple-400 shadow-[0_0_5px_rgba(168,85,247,0.5)]  flex items-center justify-center transition-all duration-[1s] group-hover:shadow-[0_0_3px_#a855f7,0_0_6px_#9333ea] mx-auto "><i class=" [text-shadow:0_0_1px_rgba(168,85,247,0.9)] fa-solid fa-chart-line text-5xl text-white transition-all duration-[1s] group-hover:[text-shadow:0_0_2px_#ffffff,0_0_4px_#a855f7,0_0_8px_#9333ea]"></i></div>
+          <h3 class="text-3xl font-bold text-white mt-4">Search Engine Optimization</h3>
+          <p class="text-gray-300 mt-4 leading-6">Improve your website's visibility and attract more visitors with advanced SEO strategies.</p>
+          <div class="mt-5 space-y-2">
+            <div class="flex items-center">
+              <i class="fa-solid fa-check text-purple-400 transition-all duration-[1s] group-hover:[text-shadow:0_0_1px_#ffffff,0_0_5px_#a855f7]"></i>
+              <span class="text-gray-200">Keyword Research</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fa-solid fa-check text-purple-400 transition-all duration-[1s] group-hover:[text-shadow:0_0_1px_#ffffff,0_0_5px_#a855f7]"></i>
+                <span class="text-gray-200">On-Page SEO</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fa-solid fa-check text-purple-400 transition-all duration-[1s] group-hover:[text-shadow:0_0_1px_#ffffff,0_0_5px_#a855f7]"></i>
+                <span class="text-gray-200">Performance Optimization</span>  
+              </div>
+            </div>
+          </div>
+        <div class="h-[450px] lg:h-[460px] xl:h-[460px] shadow-[0_0_5px_rgba(168,85,247,0.5)]  cursor-pointer sm:h-[500px] md:h-[500px] group service-icon relative rounded-[45px] border border-purple-500/40 bg-[#ffffff03] backdrop-blur-xl p-10 transition-all duration-[1s] hover:opacity-100  hover:-translate-y-2 hover:shadow-[0_0_3px_#ffffff,0_0_6px_#a855f7,0_0_12px_#9333ea] overflow-hidden hover:[animation-play-state:paused]" style="animation-delay: 0.4s;">
+          <div class="w-[140px] shadow-[0_0_5px_rgba(168,85,247,0.5)]  h-[140px] rounded-full border-2 border-purple-400 flex items-center justify-center transition-all duration-[1s] group-hover:shadow-[0_0_3px_#a855f7,0_0_6px_#9333ea] mx-auto"><i class=" [text-shadow:0_0_1px_rgba(168,85,247,0.9)] fa-solid fa-share-nodes text-5xl text-white transition-all duration-[1s] group-hover:[text-shadow:0_0_2px_#ffffff,0_0_4px_#a855f7,0_0_8px_#9333ea]"></i></div>
+          <h3 class="text-3xl font-bold text-white mt-4  ">Social Media Marketing</h3>
+          <p class="text-gray-300 mt-4 leading-6">Build a strong online presence through engaging content and data-driven campaigns.</p>
+          <div class="mt-5 space-y-2">
+            <div class="flex items-center">
+              <i class="fa-solid fa-check text-purple-400 transition-all duration-[1s] group-hover:[text-shadow:0_0_1px_#ffffff,0_0_5px_#a855f7]"></i>
+              <span class="text-gray-200">Content Strategy</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fa-solid fa-check text-purple-400 transition-all duration-[1s] group-hover:[text-shadow:0_0_1px_#ffffff,0_0_5px_#a855f7]"></i>
+                <span class="text-gray-200">Audience Growth</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fa-solid fa-check text-purple-400 transition-all duration-[1s] group-hover:[text-shadow:0_0_1px_#ffffff,0_0_5px_#a855f7]"></i>
+                <span class="text-gray-200">Campaign Management</span>
+              </div>
+            </div>
+        </div>
+        <div class="h-[450px] lg:h-[460px] xl:h-[460px] group cursor-pointer service-icon md:h-[500px] sm:h-[500px] shadow-[0_0_5px_rgba(168,85,247,0.5)]  relative rounded-[45px] border border-purple-500/40 bg-[#ffffff03]  backdrop-blur-xl p-10 transition-all duration-[1s] hover:opacity-100  hover:-translate-y-2 hover:shadow-[0_0_3px_#ffffff,0_0_6px_#a855f7,0_0_12px_#9333ea] overflow-hidden hover:[animation-play-state:paused]" style="animation-delay: 0.10s;">
+          <div class="w-[140px] h-[140px] rounded-full border-2 border-purple-400 flex items-center shadow-[0_0_5px_rgba(168,85,247,0.5)]  justify-center transition-all duration-[1s] group-hover:shadow-[0_0_3px_#a855f7,0_0_6px_#9333ea] mx-auto"><i class="[text-shadow:0_0_1px_rgba(168,85,247,0.9)] fa-solid fa-code text-5xl text-white transition-all duration-[1s] group-hover:[text-shadow:0_0_2px_#ffffff,0_0_4px_#a855f7,0_0_8px_#9333ea]"></i></div>
+          <h3 class="text-3xl font-bold text-white mt-4 ">Website Design & Development</h3>
+          <p class="text-gray-300 mt-4 leading-6">Create fast, modern, and responsive websites with stunning user experiences.</p>
+          <div class="mt-5 space-y-1">
+            <div class="flex items-center">
+              <i class="fa-solid fa-check text-purple-400 transition-all duration-[1s] group-hover:[text-shadow:0_0_1px_#ffffff,0_0_2px_#a855f7]"></i>
+              <span class="text-gray-200">Responsive Design</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fa-solid fa-check text-purple-400 transition-all duration-[1s] group-hover:[text-shadow:0_0_1px_#ffffff,0_0_2px_#a855f7]"></i>
+                <span class="text-gray-200">Clean Code</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fa-solid fa-check text-purple-400 transition-all duration-[1s] group-hover:[text-shadow:0_0_1px_#ffffff,0_0_2px_#a855f7]"></i>
+                <span class="text-gray-200">High Performance</span>
+              </div>
+            </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    
+    <div class="absolute w-[100%] h-[620px] bg-[#040018] blur-md   shadow-[0_0_20px_#040018,0_0_30px_#040018] -mt-5 z-1000"></div>
+    <section class="mt-20 section3 relative h-[300px] bg-[#040018] relative py-28 overflow-hidden ">
+    <div class="absolute top-0 bottom-0 left-0 right-0 bg-[radial-gradient(circle_at_center,rgba(168,85,247,.4),transparent_90%)]"></div>
+
+                <div class="flex justify-evenly items-center gap-8 relative z-10 flex-wrap">
+                <div class="">
+                    <h3 class="text-5xl font-bold text-white glowt xs:text-3xl">8K+</h3>
+                    <p class="text-zinc-400 mt-2">Planets</p>
+                </div>
+
+                <div class="text-center">
+                    <h3 class="text-5xl font-bold text-white glowt xs:text-3xl">1.2M+</h3>
+                    <p class="text-zinc-400 mt-2">Stars</p>
+                </div>
+
+                <div class="text-center">
+                    <h3 class="text-5xl font-bold text-white glowt xs:text-3xl">3K+</h3>
+                    <p class="text-zinc-400 mt-2">Galaxies</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-5xl font-bold text-white glowt xs:text-3xl">120+</h3>
+                    <p class="text-zinc-400 mt-2">Missions</p>
+                </div>
+                </div>
+    </section>
+
+    <section class="section3 h-min-screen py-24 bg-[#040018] relative">
+      <img src="images/bg4.png" class="absolute top-0 bottom-0 right-0 left-0 w-full h-full opacity-20">
+      <div class="title z-10 relative text-center">
+            <h2 class="text-5xl font-bold text-white mt-4 [text-shadow:0_0_5px_rgba(168,85,247,0.3)]">Meet The
+            <span class="bg-gradient-to-r from-purple-300 via-purple-500 to-blue-500 bg-clip-text text-transparent ">Explorers</span>
+          </h2>
+        </div>
+       <div class="mx-auto mt-8 w-32 h-[2px] bg-gradient-to-r from-transparent via-purple-400 to-transparent shadow-[0_0_20px_#a855f7]"></div>
+      <div class="container grid lg:grid-cols-4 gap-5 mt-14 md:grid-cols-2 grid-cols-1 mx-auto sm:w-[70%] xs:w-[80%] md:w-[95%] lg:w-[95%] xl:w-[90%]">
+
+        <div class="group overflow-hidden  cursor-pointer relative rounded-[45px] shadow-[0_0_5px_rgba(168,85,247,0.5)]  border border-purple-500/40 bg-[#ffffff03] backdrop-blur-xs transition-all duration-[1s]  hover:-translate-y-2 hover:shadow-[0_0_3px_#ffffff,0_0_6px_#a855f7,0_0_12px_#9333ea] overflow-hidden hover:opacity-100">
+          <img src="images/img1.png" alt="" class="w-full  h-[420px] object-cover transition-all duration-700 group-hover:scale-110">
+          <div class="absolute bg-gradient-to-t from-[#120B2F] via-[#120B2F]/60 to-transparent opacity-0  transition-all duration-[1s] group-hover:opacity-100 top-0 bottom-0 left-0 right-0"></div>
+          <div class="absolute m-8 bottom-0 left-0 w-full translate-y-24 group-hover:translate-y-0 transition-all duration-500">
+            <h3 class="text-3xl font-bold text-white [text-shadow:0_0_1px_#ffffff]">Moon</h3>
+            <p class="text-purple-300 mt-1">Earth's Natural Satellite</p>
+            <p class="mt-4 text-zinc-300 leading-6 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-150 w-[80%]">A silent world of craters, glowing under the endless stars.</p>
+            <div class="flex gap-3 mt-6 opacity-0 translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-[1s] delay-300">
+              <button class="w-11 h-11 rounded-full bg-purple-500/20   border border-purple-500/30  flex items-center justify-center transition-all duration-700 hover:bg-gradient-to-br hover:from-fuchsia-500 hover:via-purple-500 hover:to-violet-600 hover:text-white hover:scale-110 hover:shadow-[0_0_5px_rgba(168,85,247,.6)]"><i class="fa-solid fa-globe text-white"></i></button>
+              <button class="w-11 h-11 rounded-full bg-purple-500/20   border border-purple-500/30  flex items-center justify-center transition-all duration-700 hover:bg-gradient-to-br hover:from-fuchsia-500 hover:via-purple-500 hover:to-violet-600 hover:text-white hover:scale-110 hover:shadow-[0_0_5px_rgba(168,85,247,.6)]"><i class="fa-solid fa-location-dot text-white"></i></button>
+              <button class="w-11 h-11 rounded-full bg-purple-500/20   border border-purple-500/30  flex items-center justify-center transition-all duration-700 hover:bg-gradient-to-br hover:from-fuchsia-500 hover:via-purple-500 hover:to-violet-600 hover:text-white hover:scale-110 hover:shadow-[0_0_5px_rgba(168,85,247,.6)]"><i class="fa-solid fa-arrow-right text-white"></i></button>
+            </div>
+          </div>
+          </div>
+
+          <div class="group overflow-hidden   cursor-pointer relative rounded-[45px] shadow-[0_0_5px_rgba(168,85,247,0.5)]  border border-purple-500/40 bg-[#ffffff03] backdrop-blur-xs transition-all duration-[1s]  hover:-translate-y-2 hover:shadow-[0_0_3px_#ffffff,0_0_6px_#a855f7,0_0_12px_#9333ea] overflow-hidden hover:opacity-100">
+          <img src="images/img2.png" alt="" class="w-full h-[420px] object-cover transition-all duration-700 group-hover:scale-110">
+          <div class="absolute bg-gradient-to-t from-[#120B2F] via-[#120B2F]/60 to-transparent opacity-0  transition-all duration-[1s] group-hover:opacity-100 top-0 bottom-0 left-0 right-0"></div>
+          <div class="absolute m-8 bottom-0 left-0 w-full translate-y-24 group-hover:translate-y-0 transition-all duration-500">
+            <h3 class="text-3xl font-bold text-white [text-shadow:0_0_1px_#ffffff]">Saturn</h3>
+            <p class="text-purple-300 mt-1">The Ringed Giant</p>
+            <p class="mt-4 text-zinc-300 leading-6 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-150 w-[80%]">A majestic gas giant surrounded by breathtaking icy rings.</p>
+            <div class="flex gap-3 mt-6 opacity-0 translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-[1s] delay-300">
+              <button class="w-11 h-11 rounded-full bg-purple-500/20   border border-purple-500/30  flex items-center justify-center transition-all duration-700 hover:bg-gradient-to-br hover:from-fuchsia-500 hover:via-purple-500 hover:to-violet-600 hover:text-white hover:scale-110 hover:shadow-[0_0_5px_rgba(168,85,247,.6)]"><i class="fa-solid fa-globe text-white"></i></button>
+              <button class="w-11 h-11 rounded-full bg-purple-500/20   border border-purple-500/30  flex items-center justify-center transition-all duration-700 hover:bg-gradient-to-br hover:from-fuchsia-500 hover:via-purple-500 hover:to-violet-600 hover:text-white hover:scale-110 hover:shadow-[0_0_5px_rgba(168,85,247,.6)]"><i class="fa-solid fa-location-dot text-white"></i></button>
+              <button class="w-11 h-11 rounded-full bg-purple-500/20   border border-purple-500/30  flex items-center justify-center transition-all duration-700 hover:bg-gradient-to-br hover:from-fuchsia-500 hover:via-purple-500 hover:to-violet-600 hover:text-white hover:scale-110 hover:shadow-[0_0_5px_rgba(168,85,247,.6)]"><i class="fa-solid fa-arrow-right text-white"></i></button>
+              
+            </div>
+          </div>
+          </div>
+
+          <div class="group overflow-hidden   cursor-pointer relative rounded-[45px] border shadow-[0_0_5px_rgba(168,85,247,0.5)]  border-purple-500/40 bg-[#ffffff03] backdrop-blur-xs transition-all duration-[1s]  hover:-translate-y-2 hover:shadow-[0_0_3px_#ffffff,0_0_6px_#a855f7,0_0_12px_#9333ea] overflow-hidden hover:opacity-100 ">
+          <img src="images/img3.png" alt="" class="w-full h-[420px] object-cover transition-all duration-700 group-hover:scale-110">
+          <div class="absolute bg-gradient-to-t from-[#120B2F] via-[#120B2F]/60 to-transparent opacity-0  transition-all duration-[1s] group-hover:opacity-100 top-0 bottom-0 left-0 right-0"></div>
+          <div class="absolute m-8 bottom-0 left-0 w-full translate-y-24 group-hover:translate-y-0 transition-all duration-500">
+            <h3 class="text-3xl font-bold text-white [text-shadow:0_0_1px_#ffffff]">Earth</h3>
+            <p class="text-purple-300 mt-1">Our Blue Home</p>
+            <p class="mt-4 text-zinc-300 leading-6 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-150 w-[80%]">The only known planet that supports life, shining with vibrant cities.</p>
+            <div class="flex gap-3 mt-6 opacity-0 translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-[1s] delay-300">
+              <button class="w-11 h-11 rounded-full bg-purple-500/20   border border-purple-500/30  flex items-center justify-center transition-all duration-700 hover:bg-gradient-to-br hover:from-fuchsia-500 hover:via-purple-500 hover:to-violet-600 hover:text-white hover:scale-110 hover:shadow-[0_0_5px_rgba(168,85,247,.6)]"><i class="fa-solid fa-globe text-white"></i></button>
+              <button class="w-11 h-11 rounded-full bg-purple-500/20   border border-purple-500/30  flex items-center justify-center transition-all duration-700 hover:bg-gradient-to-br hover:from-fuchsia-500 hover:via-purple-500 hover:to-violet-600 hover:text-white hover:scale-110 hover:shadow-[0_0_5px_rgba(168,85,247,.6)]"><i class="fa-solid fa-location-dot text-white"></i></button>
+              <button class="w-11 h-11 rounded-full bg-purple-500/20   border border-purple-500/30  flex items-center justify-center transition-all duration-700 hover:bg-gradient-to-br hover:from-fuchsia-500 hover:via-purple-500 hover:to-violet-600 hover:text-white hover:scale-110 hover:shadow-[0_0_5px_rgba(168,85,247,.6)]"><i class="fa-solid fa-arrow-right text-white"></i></button>
+              
+            </div>
+          </div>
+          </div>
+
+          <div class="group overflow-hidden   cursor-pointer relative rounded-[45px] shadow-[0_0_5px_rgba(168,85,247,0.5)]  border border-purple-500/40 bg-[#ffffff03] backdrop-blur-xs transition-all duration-[1s]  hover:-translate-y-2 hover:shadow-[0_0_3px_#ffffff,0_0_6px_#a855f7,0_0_12px_#9333ea] overflow-hidden hover:opacity-100 ">
+          <img src="images/img4.png" alt="" class="w-full h-[420px] object-cover transition-all duration-700 group-hover:scale-110">
+          <div class="absolute bg-gradient-to-t from-[#120B2F] via-[#120B2F]/60 to-transparent opacity-0  transition-all duration-[1s] group-hover:opacity-100 top-0 bottom-0 left-0 right-0"></div>
+          <div class="absolute m-8 bottom-0 left-0 w-full translate-y-24 group-hover:translate-y-0 transition-all duration-500">
+            <h3 class="text-3xl font-bold text-white [text-shadow:0_0_1px_#ffffff]">Andromeda</h3>
+            <p class="text-purple-300 mt-1">Spiral Galaxy</p>
+            <p class="mt-4 text-zinc-300 leading-6 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-150 w-[80%]">A magnificent galaxy filled with billions of stars.</p>
+            <div class="flex gap-3 mt-6 opacity-0 translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-[1s] delay-300">
+              <button class="w-11 h-11 rounded-full bg-purple-500/20   border border-purple-500/30  flex items-center justify-center transition-all duration-700 hover:bg-gradient-to-br hover:from-fuchsia-500 hover:via-purple-500 hover:to-violet-600 hover:text-white hover:scale-110 hover:shadow-[0_0_5px_rgba(168,85,247,.6)]"><i class="fa-solid fa-globe text-white"></i></button>
+              <button class="w-11 h-11 rounded-full bg-purple-500/20   border border-purple-500/30  flex items-center justify-center transition-all duration-700 hover:bg-gradient-to-br hover:from-fuchsia-500 hover:via-purple-500 hover:to-violet-600 hover:text-white hover:scale-110 hover:shadow-[0_0_5px_rgba(168,85,247,.6)]"><i class="fa-solid fa-location-dot text-white"></i></button>
+              <button class="w-11 h-11 rounded-full bg-purple-500/20   border border-purple-500/30  flex items-center justify-center transition-all duration-700 hover:bg-gradient-to-br hover:from-fuchsia-500 hover:via-purple-500 hover:to-violet-600 hover:text-white hover:scale-110 hover:shadow-[0_0_5px_rgba(168,85,247,.6)]"><i class="fa-solid fa-arrow-right text-white"></i></button>
+              
+            </div>
+          </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="absolute w-[100%] h-[200px] bg-[#040018] blur-md   shadow-[0_0_20px_#040018,0_0_30px_#040018] -mt-5 z-1000"></div>
+    <section id="contact" class="bg-[#040018] mt-[70px]">
+    <div class="container mx-auto p-4">
+        <div class="grid lg:grid-cols-2 gap-10 rounded-[35px] bg-[#120B2F]/70 backdrop-blur-xl border border-purple-500/20 shadow-[0_0_5px_rgba(255,255,255,0.7),0_0_10px_rgba(168,85,247,0.6),0_0_15px_rgba(147,51,234,0.5)] p-10">
+            <div> 
+              <h3 class="text-3xl font-bold text-white mb-8">Send Message</h3>
+                <form class="space-y-5">
+                    <input type="text" placeholder="Your Name" class="w-full h-14 rounded-xl bg-[#1A123B] border border-purple-500/20 px-5 text-white outline-none transition duration-500 focus:border-purple-500">
+                    <input type="email" placeholder="Email Address" class="w-full h-14 rounded-xl bg-[#1A123B] border border-purple-500/20 px-5 text-white outline-none transition duration-500 focus:border-purple-500">
+                    <textarea rows="10" placeholder="Write your message..." class="w-full rounded-xl bg-[#1A123B] border border-purple-500/20 p-5 text-white resize-none outline-none transition duration-500 focus:border-purple-500"></textarea>
+
+<button class="relative w-full py-4 rounded-xl text-white font-semibold bg-gradient-to-br from-fuchsia-500 via-purple-500 to-violet-600  transition-all duration-[700ms] hover:scale-[1.01] hover:shadow-[0_0_10px_rgba(168,85,247,0.6)] active:scale-[0.98]"><i class="fa-solid fa-rocket"></i>  Launch Mission</button>                      
+</form>
+            </div>
+            <div class="flex flex-col justify-between">
+                <div>
+                    <h3 class="text-3xl font-bold text-white mb-8">Mission Control</h3>
+                    <div class="space-y-6">
+                        <div class="flex gap-5 items-center">
+                            <div class="w-14 h-14 rounded-full bg-purple-500/20 flex items-center justify-center">
+                              <i class="fa-solid fa-location-dot text-purple-400"></i>
+                            </div>
+                            <div>
+                                <p class="text-zinc-400">Location</p>
+                                <h4 class="text-white font-semibold">Cairo, Egypt</h4>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 items-center">
+                            <div
+                                class="w-14 h-14 rounded-full bg-purple-500/20 flex items-center justify-center">
+                                <i class="fa-solid fa-envelope text-purple-400"></i>
+                            </div>
+                            <div>
+                                <p class="text-zinc-400">Email</p>
+                                <h4 class="text-white font-semibold">hello@space.com</h4>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 items-center">
+                            <div
+                                class="w-14 h-14 rounded-full bg-purple-500/20 flex items-center justify-center">
+                                <i class="fa-solid fa-phone text-purple-400"></i>
+                            </div>
+                            <div>
+                                <p class="text-zinc-400">Phone</p>
+                                <h4 class="text-white font-semibold">+20 123 456 789</h4>
+                            </div>
+                        </div>
                     </div>
-                </div> <!-- section2-card -->
-    </section> <!-- section2 -->
-    <section class="section3">
-        <div class="section3-container">
-             <div class="bar-section3">
-                <div class="text-title">
-                    <h3>Popular Destinations</h3>
-                </div> <!-- text-title -->
-                <ul class="bar">
-                    <li><a href="#" class="beach" style="color: #3FB7B0; text-shadow: 0px 0px 5px #adfffb;">Beach Getaways</a><div class="beach-line"></div></li>
-                    <li><a href="#">Mountain Adventures</a></li>
-                    <li><a href="#">Cultural Tours</a></li>
-                    <li><a href="#">City Breaks</a></li>
-                </ul> <!-- bar -->
-             </div> <!-- bar-section3 -->
-             <hr style="width: 100%; margin: 20px 0; border: 1px solid #ccc;">
-             <i class="fa-solid fa-angle-left arrow-left"></i>
-             <div class="section3-cards-container">
-                <div class="section3-card">
-                    <div class="section3-img-container">
-                    <div class="section3-card-front fcard1"><div class="section3-text-type-front"></div></div> <!-- section3-card-front -->
-                    <div class="section3-card-back bcard1"><div class="section3-text-type-back"><div class="section3-text-type"></div></div></div> <!-- section3-card-back -->
-                    </div> <!-- section3-img-container -->
-                    <div class="section3-icons-container">
-                        <div class="icon-parent"><i class="fa-solid fa-plane"></i></div>
-                        <div class="icon-parent"><i class="fa-solid fa-heart" ></i></div>
-                        <div class="icon-parent"><i class="fa-solid fa-magnifying-glass"></i></div>
-                    </div> <!-- section3-icons-container -->
-                    <div class="section3-card-text">
-                        <h4>Maldives</h4>
-                        <span>299.99$</span> <span style="text-decoration: line-through; color: rgb(66, 66, 66);">499.99$</span>
-                    </div> <!-- section3-card-text -->
-                </div> <!-- section3-card -->
-
-                <div class="section3-card">
-                    <div class="section3-img-container">
-                    <div class="section3-card-front fcard3"><div class="section3-text-type-front"></div></div> <!-- section3-card-front -->
-                    <div class="section3-card-back bcard3"><div class="section3-text-type-back"><div class="section3-text-type"></div></div></div> <!-- section3-card-back -->
-                    </div> <!-- section3-img-container -->
-                    <div class="section3-icons-container">
-                        <div class="icon-parent"><i class="fa-solid fa-plane"></i></div>
-                        <div class="icon-parent"><i class="fa-solid fa-heart" ></i></div>
-                        <div class="icon-parent"><i class="fa-solid fa-magnifying-glass"></i></div>
-                    </div> <!-- section3-icons-container -->
-                    <div class="section3-card-text">
-                        <h4>Santorini</h4>
-                        <span>99.99$</span> <span style="text-decoration: line-through; color: rgb(66, 66, 66);">120.99$</span>
-                    </div> <!-- section3-card-text -->
-                </div> <!-- section3-card -->
-
-                <div class="section3-card">
-                        <div class="section3-img-container">
-                    <div class="section3-card-front fcard2"><div class="section3-text-type-front"></div></div> <!-- section3-card-front -->
-                    <div class="section3-card-back bcard2"><div class="section3-text-type-back"><div class="section3-text-type"></div></div></div> <!-- section3-card-back -->
-                    </div> <!-- section3-img-container -->
-                    <div class="section3-icons-container">
-                        <div class="icon-parent"><i class="fa-solid fa-plane"></i></div>
-                        <div class="icon-parent"><i class="fa-solid fa-heart" ></i></div>
-                        <div class="icon-parent"><i class="fa-solid fa-magnifying-glass"></i></div>
-                    </div> <!-- section3-icons-container -->
-                    <div class="section3-card-text">
-                       <h4>Bora Bora</h4>
-                        <span>150.99$</span> <span style="text-decoration: line-through; color: rgb(66, 66, 66);">200.99$</span>
-                    </div> <!-- section3-card-text -->
-                </div> <!-- section3-card -->
-
-                <div class="section3-card">
-                    <div class="section3-img-container">
-                    <div class="section3-card-front fcard4"><div class="section3-text-type-front"></div></div> <!-- section3-card-front -->
-                    <div class="section3-card-back bcard4"><div class="section3-text-type-back"><div class="section3-text-type"></div></div></div> <!-- section3-card-back -->
-                        </div> <!-- section3-img-container -->
-                    <div class="section3-icons-container">
-                        <div class="icon-parent"><i class="fa-solid fa-plane"></i></div>
-                        <div class="icon-parent"><i class="fa-solid fa-heart" ></i></div>
-                        <div class="icon-parent"><i class="fa-solid fa-magnifying-glass"></i></div>
-                    </div> <!-- section3-icons-container -->
-                    <div class="section3-card-text">
-                        <h4>Seychelles</h4>
-                        <span>399.99$</span> <span style="text-decoration: line-through; color: rgb(66, 66, 66);">499.99$</span>
-                    </div> <!-- section3-card-text -->
-                </div> <!-- section3-card -->
-             </div> <!-- section3-cards-container --> 
-             <i class="fa-solid fa-angle-right arrow-right"></i>
-        </div> <!-- section3-container -->
-    </section> <!-- section3 -->
-
-<section class="testimonial">
-  <h2>Customer Testimonial</h2>
-  <p class="subtitle">
-    Every journey leaves a story. Here’s what our happy travelers have to say.
-  </p>
-  <i class="fa-solid fa-circle-chevron-left section4-arrow-left"></i>
-  <i class="fa-solid fa-circle-chevron-right section4-arrow-right"></i> 
-  <div class="testimonial-card">
-    <span class="quote">“</span>
-    <p class="text">
-      Our trip was absolutely amazing! The destinations were breathtaking,
-      and every detail was perfectly planned. It was an experience we’ll
-      never forget.
-    </p>
-    <div class="stars">
-      ★ ★ ★ ★ ★
-    </div>  <!-- stars -->
-    <div class="user">
-      <img src="images/𝁘ᰱ 𝐂𝛝ʈ𝛊ⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪⷪ𝛜 _🌷°.jfif" alt="user">
-      <div>  <!-- user -->
-        <h4>Lily Eprahim</h4>
-        <span>Travel Blogger</span>
-  </div> <!-- testimonial-card -->
-</section> <!-- testimonial -->
-<section class="section5">
-     <div class="section5-container">
-             <div class="bar-section3">
-                <div class="text-title" style="margin: 50px auto">
-                    <h3>Dream Destinations</h3>
-                </div> <!-- text-title -->
-             <hr style="width: 100%; margin:0; border: 1px solid #cccccc00;">
-             <i class="fa-solid fa-angle-left arrow-left"></i>
-             <div class="section3-cards-container">
-                <div class="section5-card">
-                    <div class="section5-img-container">
-                    <div class="section5-card-front section5-fcard1"><div class="section3-text-type-front"><div class="section3-text-type"></div></div></div> <!-- section5-card-front -->
-                    <div class="section5-card-back section5-bcard1"><div class="section3-text-type-front"><div class="section3-text-type"></div></div></div> <!-- section5-card-back -->
-                    </div> <!-- section5-img-container -->
-                    <div class="section3-icons-container">
-                        <div class="icon-parent"><i class="fa-solid fa-plane"></i></div>
-                        <div class="icon-parent"><i class="fa-solid fa-heart" ></i></div>
-                        <div class="icon-parent"><i class="fa-solid fa-magnifying-glass"></i></div>
-                    </div> <!-- section3-icons-container -->
-                    <div class="section3-card-text">
-                        <h4>Azure Bay</h4>
-                        <span>1199.99$</span> <span style="text-decoration: line-through; color: rgb(66, 66, 66);">2999.99$</span>
-                    </div> <!-- section3-card-text -->
-                </div> <!-- section3-card -->
-
-                <div class="section5-card">
-                    <div class="section5-img-container">
-                    <div class="section5-card-front section5-fcard2"><div class="section3-text-type-front"><div class="section3-text-type"></div></div></div> <!-- section5-card-front -->
-                    <div class="section5-card-back section5-bcard2"><div class="section3-text-type-front"><div class="section3-text-type"></div></div></div> <!-- section5-card-back -->
-                    </div> <!-- section5-img-container -->
-                    <div class="section3-icons-container">
-                        <div class="icon-parent"><i class="fa-solid fa-plane"></i></div>
-                        <div class="icon-parent"><i class="fa-solid fa-heart" ></i></div>
-                        <div class="icon-parent"><i class="fa-solid fa-magnifying-glass"></i></div>
-                    </div> <!-- section3-icons-container -->
-                    <div class="section3-card-text">
-                       <h4>Paradise Villas</h4>
-                        <span>350.99$</span> <span style="text-decoration: line-through; color: rgb(66, 66, 66);">800.99$</span>
-                    </div> <!-- section3-card-text -->
-                </div> <!-- section3-card -->
-
-                <div class="section5-card">
-                    <div class="section5-img-container">
-                    <div class="section5-card-front section5-fcard3"><div class="section3-text-type-front"><div class="section3-text-type"></div></div></div> <!-- section5-card-front -->
-                    <div class="section5-card-back section5-bcard3"><div class="section3-text-type-front"><div class="section3-text-type"></div></div></div> <!-- section5-card-back -->
-                    </div> <!-- section5-img-container -->
-                    <div class="section3-icons-container">
-                        <div class="icon-parent"><i class="fa-solid fa-plane"></i></div>
-                        <div class="icon-parent"><i class="fa-solid fa-heart" ></i></div>
-                        <div class="icon-parent"><i class="fa-solid fa-magnifying-glass"></i></div>
-                    </div> <!-- section3-icons-container -->
-                    <div class="section3-card-text">
-                        <h4>Crystal Cove</h4>
-                        <span>199.99$</span> <span style="text-decoration: line-through; color: rgb(66, 66, 66);">320.99$</span>
-                    </div> <!-- section3-card-text -->
-                </div> <!-- section3-card -->
-
-                <div class="section5-card">
-                    <div class="section5-img-container">
-                    <div class="section5-card-front section5-fcard4"><div class="section3-text-type-front"><div class="section3-text-type"></div></div></div> <!-- section5-card-front -->
-                    <div class="section5-card-back section5-bcard4"><div class="section3-text-type-front"><div class="section3-text-type"></div></div></div> <!-- section5-card-back -->
-                    </div> <!-- section5-img-container -->
-                    <div class="section3-icons-container">
-                        <div class="icon-parent"><i class="fa-solid fa-plane"></i></div>
-                        <div class="icon-parent"><i class="fa-solid fa-heart" ></i></div>
-                        <div class="icon-parent"><i class="fa-solid fa-magnifying-glass"></i></div>
-                    </div> <!-- section3-icons-container -->
-                    <div class="section3-card-text">
-                        <h4>Sunset Escape</h4>
-                        <span>499.99$</span> <span style="text-decoration: line-through; color: rgb(66, 66, 66);">999.99$</span>
-                    </div> <!-- section3-card-text -->
-                </div> <!-- section3-card -->
-             </div> <!-- section3-cards-container --> 
-             <i class="fa-solid fa-angle-right arrow-right"></i>
-        </div> <!-- section3-container -->
-</section> <!-- section5 -->
-<section class="section5 section6">
-     <div class="section5-container">
-             <div class="bar-section3">
-                <div class="text-title" style="margin: 50px auto">
-                    <h3>Latest News</h3>
-                </div> <!-- text-title -->
-             <hr style="width: 100%; margin:0; border: 1px solid #cccccc00;">
-             <div class="section3-cards-container">
-                <div class="section5-card section6-card">
-                    <div class="section5-img-container section6-img-container">
-                        <div class="section5-card-back section6-card1"></div> <!-- section5-card-back -->
-                    </div> <!-- section5-img-container -->
-                    <div class="section3-card-text section6-card-text">
-                        <p>Travel Tips</p>
-                        <h4>Best Tropical Islands To Visit</h4>
-                        <p>Explore crystal-clear beaches and unforgettable island adventures.</p> 
-                        <div class="read"><a href="#">Read more</a></div>
-                    </div> <!-- section3-card-text -->
-                </div> <!-- section3-card -->
-
-                <div class="section5-card section6-card">
-                    <div class="section5-img-container section6-img-container">
-                        <div class="section5-card-back section6-card2"></div> <!-- section5-card-back -->
-                    </div> <!-- section5-img-container -->
-                    <div class="section3-card-text section6-card-text">
-                        <p>Travel Tips</p>
-                        <h4>Travel Tips For Your Next Trip</h4>
-                        <p>Smart packing and travel hacks for a smooth vacation experience.</p> 
-                        <div class="read"><a href="#">Read more</a></div>
-                    </div> <!-- section3-card-text -->
-                </div> <!-- section3-card -->
-
-                <div class="section5-card section6-card">
-                    <div class="section5-img-container section6-img-container">
-                        <div class="section5-card-back section6-card3"></div> <!-- section5-card-back -->
-                    </div> <!-- section5-img-container -->
-                    <div class="section3-card-text section6-card-text">
-                        <p>Travel Tips</p>
-                        <h4>Luxury Resorts Around The World</h4>
-                        <p>Discover premium resorts with stunning ocean and sunset views.</p> 
-                        <div class="read"><a href="#">Read more</a></div>
-                    </div> <!-- section3-card-text -->
-                </div> <!-- section3-card -->
-
-             </div> <!-- section3-cards-container --> 
-        </div> <!-- section3-container -->
-</section> <!-- section6 -->
-
-<section class="features">
-  <div class="feature">
-    <span class="icon">
-      <i class="fas fa-plane"></i>
-      <i class="fas fa-plane"></i>
-    </span>
-    <h4>Easy Booking</h4>
-    <p>Quick & simple reservations</p>
-  </div>
-
-  <div class="feature">
-    <span class="icon" style="padding-top: 5px;">
-      <i class="fas fa-lock"></i>
-      <i class="fas fa-lock"></i>
-    </span>
-    <h4>Secure Payment</h4>
-    <p>Safe payment methods</p>
-  </div>
-
-  <div class="feature">
-    <span class="icon">
-      <i class="fas fa-map"></i>
-      <i class="fas fa-map"></i>
-    </span>
-    <h4>Top Destinations</h4>
-    <p>Handpicked places</p>
-  </div>
-
-  <div class="feature">
-    <span class="icon">
-      <i class="fas fa-headset"></i>
-      <i class="fas fa-headset"></i>
-    </span>
-    <h4>24/7 Support</h4>
-    <p>Always here for you</p>
-  </div>
-</section>
-
-<section class="footer">
-    <div class="footer-container">
-        <div class="footer-top">
-            <div class="footer-news">
-                <h2>Start Your Next Adventure</h2>
-                <p>Get travel deals, dreamy destinations, and exclusive offers straight to your inbox.</p>
+                </div>
+                <div
+                    class="mt-8 rounded-3xl overflow-hidden border border-purple-500/20 shadow-[0_0_30px_rgba(168,85,247,.25)]">
+                    <img src="images/img6.png" class="w-full h-[270px] object-cover hover:scale-110 duration-700 hover:shadow-[0_0_5px_rgba(255,255,255,0.7),0_0_10px_rgba(168,85,247,0.6),0_0_15px_rgba(147,51,234,0.5)]">
+                </div>
             </div>
-            <div class="footer-subscribe">
-                <input type="email" placeholder="Enter Your Email">
-                <button>Subscribe</button>
-            </div>
-            <div class="footer-social">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
-        </div>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="images/logo2.png" alt="">
-                <p>Explore breathtaking destinations and collect unforgettable memories around the world.</p>
-            </div>
-            <div class="footer-links">
-                <h3>Destinations</h3>
-                <a href="#">Beach Escapes</a>
-                <a href="#">Mountain Trips</a>
-                <a href="#">Luxury Resorts</a>
-                <a href="#">City Tours</a>
-            </div>
-            <div class="footer-links">
-                <h3>Travel Styles</h3>
-                <a href="#">Adventure</a>
-                <a href="#">Romantic</a>
-                <a href="#">Family Tours</a>
-                <a href="#">Cruises</a>
-            </div>
-            <div class="footer-links">
-                <h3>Quick Links</h3>
-                <a href="#">About Us</a>
-                <a href="#">Support</a>
-                <a href="#">FAQ</a>
-                <a href="#">Contact</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 Sirena Travel. Crafted with <i class="fa-solid fa-heart last-heart"></i> for dream travelers.</p>
         </div>
     </div>
 </section>
+<footer class=" bg-[#040018]">
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+            <div>
+                <p class="text-zinc-500 text-sm">
+                © 2026 Astra. All Rights Reserved.
+            </p>
+            </div>
+            <div class="flex gap-5">
+                <a href="#" class="w-14 h-14 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-300 transition-all duration-700 hover:bg-gradient-to-br hover:from-fuchsia-500 hover:via-purple-500 hover:to-violet-600 hover:text-white hover:scale-110 hover:shadow-[0_0_18px_rgba(168,85,247,.6)]">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="w-14 h-14 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-300 transition-all duration-700 hover:bg-gradient-to-br hover:from-fuchsia-500 hover:via-purple-500 hover:to-violet-600 hover:text-white hover:scale-110 hover:shadow-[0_0_18px_rgba(168,85,247,.6)]">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="w-14 h-14 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-300 transition-all duration-700 hover:bg-gradient-to-br hover:from-fuchsia-500 hover:via-purple-500 hover:to-violet-600 hover:text-white hover:scale-110 hover:shadow-[0_0_18px_rgba(168,85,247,.6)]">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#" class="w-14 h-14 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-300 transition-all duration-700 hover:bg-gradient-to-br hover:from-fuchsia-500 hover:via-purple-500 hover:to-violet-600 hover:text-white hover:scale-110 hover:shadow-[0_0_18px_rgba(168,85,247,.6)]">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
 </!DOCTYPE html>
